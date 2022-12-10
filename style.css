@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+body {
+  background-color: #ffe3e1;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper {
+  width: 70vw;
+  min-height: 50vh;
+  background-color: #ffd1d1;
+  border: 3px solid #ff9494;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2.5rem;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.editor {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.editor label {
+  font-size: 2.8vmin;
+  color: #ff7777;
+}
+.editor input[type="range"] {
+  display: block;
+  margin-top: 0.2rem;
+}
+.flip-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.flip-buttons .flip-option {
+  margin-top: 0.5rem;
+}
+.flip-option {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.result img {
+  display: block;
+  max-width: calc(100% - 4.5vmin);
+  max-height: 45vh;
+  margin: auto;
+}
+input[type="file"] {
+  display: none;
+}
+.result label {
+  display: block;
+  background-color: #ff7777;
+  color: #ffff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.reset {
+  display: block;
+  background-color: #ff7777;
+  color: #ffff;
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
